@@ -29,3 +29,11 @@ background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.1
     margin: 35px;
     height:60vh;
 }
+button {
+    height: 20%;
+    width: 20%;
+    margin: 2%;
+    border-radius: 10%;
+    font-size: 2rem;
+    background-color: #f0f0f0;
+}
