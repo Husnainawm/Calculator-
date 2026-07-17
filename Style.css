@@ -36,4 +36,22 @@ button {
     border-radius: 10%;
     font-size: 2rem;
     background-color: #f0f0f0;
+      transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
+
+button:hover, button:focus-visible {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  button:hover, button:focus-visible {
+    transform: scale(1.1);
+  }
+}
+
+.equal {
+    background-color: #ebc334 ;
+}
+
