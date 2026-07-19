@@ -13,7 +13,7 @@ background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.1
 }
 
 .Calculator_Model {
-    height: 80vh;
+    height: 90vh;
     width: 30vw;
     background-color: black;
     border-radius: 2.5rem;
@@ -28,7 +28,7 @@ background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.1
 
 .btn{
     margin: 35px;
-    height:60vh;
+    height:50vh;
 }
 button {
     height: 20%;
@@ -58,4 +58,12 @@ button:hover, button:focus-visible {
 
 .operator {
     background-color: rgb(106, 214, 187) ;
+}
+
+.clear{
+    height: 10%;
+    width: 90% ;
+    border-radius: 2.5rem;
+    padding:0;
+    margin-left: 5%;
 }
