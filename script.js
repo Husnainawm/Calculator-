@@ -22,4 +22,5 @@ function appendNumber(number) {
     } else {
         currentInput += number;
     } 
+    updateDisplay();
 }
