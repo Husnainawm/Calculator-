@@ -10,3 +10,16 @@ let currentInput = '0';
 let previousInput = '';      
 let operator = null;  
 let shouldResetScreen = false; 
+
+function updateDisplay() {
+    display.textContent = currentInput;
+}
+
+function appendNumber(number) {
+    if (currentInput === '0' || shouldResetScreen) {
+        currentInput = number;
+        shouldResetScreen = false;
+    } else {
+        currentInput += number;
+    } 
+}
