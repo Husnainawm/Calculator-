@@ -56,3 +56,6 @@ button:hover, button:focus-visible {
     background-color: #ebc334 ;
 }
 
+.operator {
+    background-color: rgb(106, 214, 187) ;
+}
