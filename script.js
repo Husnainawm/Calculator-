@@ -24,3 +24,37 @@ function appendNumber(number) {
     } 
     updateDisplay();
 }
+
+function chooseOperator(op) {
+    if (operator !== null) {
+        calculate();
+    }
+    previousInput = currentInput;
+    operator = op;
+    shouldResetScreen = true;
+}  
+
+function calculate() {
+    let result;
+    const prev = parseFloat(previousInput);
+    const current = parseFloat(currentInput);
+    if (isNaN(prev) || isNaN(current)) return;
+    
+    switch (operator) {
+        case '+':
+            result = prev + current;    
+            break;
+        case '-':
+            result = prev - current;    
+            break;
+        case '*':
+            result = prev * current;
+            break;
+        case '/':
+               result = current ===0 ? "Error" : prev / current;
+            break;
+        default:
+            return;
+            
+        }
+    }
