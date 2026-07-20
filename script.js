@@ -57,4 +57,11 @@ function calculate() {
             return;
             
         }
+
+        function Handleclear(){
+            currentInput="0";
+            previousInput='';
+            operator=null;
+            updateDisplay();
+        }
     }
