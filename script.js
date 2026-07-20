@@ -77,4 +77,15 @@ function calculate() {
             calculate();
             shouldResetScreen = true;
         }
+
+        input.forEach(button => {
+            button.addEventListener('click', () => appendNumber(button.textContent));
+        });
+
+        operator.forEach(button => {
+            button.addEventListener('click', () => chooseOperator(button.textContent));
+        });
+
+        equals.addEventListener('click', handleEqual);
+        clear.addEventListener('click', Handleclear);
         
