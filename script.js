@@ -71,3 +71,10 @@ function calculate() {
             operator=null;
             updateDisplay();
         }
+
+        function handleEqual() {
+            if (operator === null || shouldResetScreen) return;
+            calculate();
+            shouldResetScreen = true;
+        }
+        
