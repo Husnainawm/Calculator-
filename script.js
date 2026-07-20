@@ -88,4 +88,6 @@ function calculate() {
 
         equals.addEventListener('click', handleEqual);
         clear.addEventListener('click', Handleclear);
-        
+
+
+        updateDisplay();

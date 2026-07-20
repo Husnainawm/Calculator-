@@ -22,6 +22,8 @@ background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.1
 .screen{
     margin: 35px;
     height:10vh;
+    font-size: 4.5rem;
+    text-align: right;
     background-color: aliceblue;
     border-radius: 10px;
 }
