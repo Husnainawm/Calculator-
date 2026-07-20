@@ -1,7 +1,7 @@
 // Selecting the elements from the DOM
-let display = document.getElementsByClassName(".screen");
+let display = document.querySelector(".screen");
 let input = document.querySelectorAll(".number");
-let operator = document.querySelectorAll(".operator");
+let operatorbtn = document.querySelectorAll(".operator");
 let equals = document.querySelector(".equal");
 let clear = document.querySelector(".clear");
 
@@ -47,7 +47,7 @@ function calculate() {
         case '-':
             result = prev - current;    
             break;
-        case '*':
+        case 'x':
             result = prev * current;
             break;
         case '/':
@@ -82,7 +82,7 @@ function calculate() {
             button.addEventListener('click', () => appendNumber(button.textContent));
         });
 
-        operator.forEach(button => {
+        operatorbtn.forEach(button => {
             button.addEventListener('click', () => chooseOperator(button.textContent));
         });
 
