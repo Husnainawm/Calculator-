@@ -57,11 +57,17 @@ function calculate() {
             return;
             
         }
+       
+        currentInput = result.toString();
+        operator = null;
+        previousInput = '';
+        updateDisplay();
 
-        function Handleclear(){
+    }
+
+         function Handleclear(){
             currentInput="0";
             previousInput='';
             operator=null;
             updateDisplay();
         }
-    }
